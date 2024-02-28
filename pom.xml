@@ -359,7 +359,7 @@
         <dependency>
             <groupId>org.eclipse.jdt</groupId>
             <artifactId>ecj</artifactId>
-            <version>3.21.0</version>
+            <version>3.36.0</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -497,8 +497,7 @@
                             <shadedClassifierName>project-classifier</shadedClassifierName>
                             <outputFile>shade\${project.artifactId}.jar</outputFile>
                             <transformers>
-                                <transformer implementation=
-                                                     "org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>com.inventorymanagementsystem.app.Launcher</mainClass>
                                 </transformer>
                             </transformers>
